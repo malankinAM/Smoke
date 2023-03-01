@@ -1,2 +1,2 @@
 # Smoke
-## [ПОСМОТРИ]("https://malankinam.github.io/Smoke/")
+## [ПОСМОТРИ](https://malankinam.github.io/Smoke/)
