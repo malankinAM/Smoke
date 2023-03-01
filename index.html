@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <p class="text1">I Love Frontend</p>
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid alias culpa laudantium quisquam
+            consequatur repellat ipsa cupiditate eligendi aut temporibus, placeat impedit neque quo nostrum ratione
+            minima ipsam libero excepturi.</p>
+    </section>
+
+
+    <script>
+        const text = document.querySelector('.text');
+        text.innerHTML = text.textContent.replace(/\S/g,"<span>$&</span>");
+
+        const letters = document.querySelectorAll('span');
+        for(let i=0; i<letters.length; i++){
+            letters[i].addEventListener("mouseover", function(){
+                letters[i].classList.add('active')
+            })
+        }
+
+
+    </script>
+    <script>
+            const text1 = document.querySelector('.text1');
+        text1.innerHTML = text1.textContent.replace(/\S/g,"<span>$&</span>");
+
+        const letters1 = document.querySelectorAll('span');
+        for(let i=0; i<letters1.length; i++){
+            letters1[i].addEventListener("mouseover", function(){
+                letters1[i].classList.add('active')
+            })
+        }
+    </script>
+</body>
+
+</html>
